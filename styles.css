@@ -1,28 +1,69 @@
-
 html {
   --primary: #24305E;
   --primaryVariant: #374785;
   --secondary: #00A79d;
-  --secondaryVariant #26807A;
+  --secondaryVariant: #26807A;
   --logoBackground: #00A79D;
   --logoRed: #ED1C24;
   --logoOrange: #F7941D;
-  --white: #F8F8FF;
+  --white: #F5F5F5;
   --black: #080808;
-  --background: #F8F8FF;
+  --offBlack: #212221;
+  --background: #F5F5F5;
   --error: #ED1C24;
-  --textColor:#080808;
-  --textVariant:#F8F8FF;
+  --textColor: #080808;
+  --textVariant: #F5F5F5;
   --baseSpacing: 8px;
+  --fontStack: Acumin-pro;
 
   font-size: 10px;
 }
 
 body {
-    height: 100vh;
+  font-family: var(--fontStack); 
+  font-size: 1.5em;
 }
 
 header {
+  background: var(--primary);
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+nav {
+  display: flex;
+}
+
+nav ul{
+  display: flex;
+  flex-direction: column;
+  list-style-type: none;
+  padding: 0;
+}
+
+nav a {
+  color: black;
+  text-decoration: none;
+}
+
+main {
+
+}
+
+footer {
+  background: var(--primary);
+  font-size: .8em;
+  height: 10vm;
+}
+
+header img {
+  height: 10vh;
+}
+
+
+/* header {
   background-image: linear-gradient(
     to right, 
     #ed1c24, 
@@ -38,10 +79,6 @@ header {
     #2ead83, 
     #00a79d);
   height: 10vh;
-}
-
-header img {
-  height: 75px;
 }
 
 main {  
@@ -169,9 +206,7 @@ main {
       rgba(52, 52, 52, 0.02) 75%,
       rgba(52, 52, 52, 0.02) 100%
     ),
-    /* linear-gradient(255,255,255, 0.02), */
     url(./assets/wireframe.jpg);
     background-size: cover;
   height: 90vh;
-  /* margin-top: 10vh; */
-}
+} */
