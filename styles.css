@@ -70,7 +70,7 @@ main {
   /* color: var(--white) */
   display: flex;
   flex-direction: column;
-  height: 75vh;
+  min-height: 75vh;
   padding: var(--baseSpacing);
   text-align: center;
 }
