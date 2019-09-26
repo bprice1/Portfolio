@@ -13,53 +13,79 @@ html {
   --error: #ED1C24;
   --textColor: #080808;
   --textVariant: #F5F5F5;
-  --baseSpacing: 8px;
-  --fontStack: Acumin-pro;
+  --baseSpacing: 10px;
 
   font-size: 10px;
 }
 
 body {
-  font-family: var(--fontStack); 
+  font-family: 'Roboto', sans-serif;
   font-size: 1.5em;
 }
 
 header {
+  align-items: center;
   background: var(--primary);
   display:flex;
   flex-direction: column;
-  align-items: center;
+  height: 15vh;
   justify-content: center;
+  margin: 0:
+}
+
+header img {
+  height: 50px;
+}
+
+header h1 {
+  color: var(--white);
+  margin: 0;
 }
 
 nav {
-  display: flex;
+  background: var(--primary);
+  text-align: center;
 }
 
 nav ul{
-  display: flex;
-  flex-direction: column;
   list-style-type: none;
+  margin: 0;
   padding: 0;
 }
 
+nav li {
+  margin: 0;
+  padding: var(--baseSpacing);
+}
+
 nav a {
-  color: black;
+  color: var(--white);
+  margin: 10px;
   text-decoration: none;
 }
 
 main {
+  display: flex;
+  flex-direction: column;
+  /* height: 60vh; */
+  padding: var(--baseSpacing);
+  text-align: center;
+}
 
+main a {
+  padding: var(--baseSpacing);
 }
 
 footer {
   background: var(--primary);
+  color: var(--white);
   font-size: .8em;
-  height: 10vm;
 }
 
-header img {
-  height: 10vh;
+.bigBold {
+  font-size: 15vw;
+  margin: var(--baseSpacing);
+  /* text-transform: uppercase;  */
 }
 
 
