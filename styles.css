@@ -65,6 +65,7 @@ nav a {
 }
 
 main {
+  background: var(--white);
   display: flex;
   flex-direction: column;
   /* height: 60vh; */
