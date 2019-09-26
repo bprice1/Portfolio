@@ -1,5 +1,6 @@
 html {
-  --primary: #24305E;
+  /* --primary: #24305E; */
+  --primary: rgb(23, 30, 59);
   --primaryVariant: #374785;
   --secondary: #00A79d;
   --secondaryVariant: #26807A;
@@ -18,6 +19,11 @@ html {
   font-size: 10px;
 }
 
+* {
+  margin: 0;
+  padding: 0;
+}
+
 body {
   font-family: 'Roboto', sans-serif;
   font-size: 1.5em;
@@ -30,7 +36,6 @@ header {
   flex-direction: column;
   height: 15vh;
   justify-content: center;
-  margin: 0:
 }
 
 header img {
@@ -39,7 +44,6 @@ header img {
 
 header h1 {
   color: var(--white);
-  margin: 0;
 }
 
 nav {
@@ -49,12 +53,9 @@ nav {
 
 nav ul{
   list-style-type: none;
-  margin: 0;
-  padding: 0;
 }
 
 nav li {
-  margin: 0;
   padding: var(--baseSpacing);
 }
 
@@ -65,12 +66,25 @@ nav a {
 }
 
 main {
-  background: var(--white);
+  background: var(--primary);
+  /* color: var(--white) */
   display: flex;
   flex-direction: column;
-  /* height: 60vh; */
+  height: 75vh;
   padding: var(--baseSpacing);
   text-align: center;
+}
+
+main h2 {
+  color: var(--white);
+  margin: var(--baseSpacing);
+  padding: var(--baseSpacing);
+}
+
+main h1,
+main p {
+  color: var(--white);
+  margin: var(--baseSpacing);
 }
 
 main a {
@@ -86,7 +100,36 @@ footer {
 .bigBold {
   font-size: 15vw;
   margin: var(--baseSpacing);
-  /* text-transform: uppercase;  */
+  margin-top: 50px;
+}
+
+.fas {
+  background: var(--primary);
+  color: white;
+  font-size: 2em;
+  padding: 10px 20px;  
+}
+
+nav .fas {
+  position: absolute;
+  transform: translateX(calc(50vw - 70px));
+}
+
+.is-hidden--mobile {
+  font-size: 0;
+  height: 0;
+}
+
+.btn {
+  background-color: var(--logoBackground);
+  border-radius: 10%;
+  box-shadow: 3px 3px 3px var(--logoOrange);
+  color: var(--white);
+  display: inline-block;
+  margin: calc(var(--baseSpacing) *2 );
+  padding: 10px 15px;
+  text-decoration: none;
+  text-transform: uppercase;
 }
 
 
