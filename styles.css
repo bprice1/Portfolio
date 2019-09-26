@@ -95,6 +95,12 @@ footer {
   background: var(--primary);
   color: var(--white);
   font-size: .8em;
+  padding: var(--baseSpacing);
+  text-align: center;
+}
+
+footer p {
+  margin: var(--baseSpacing);
 }
 
 .bigBold {
