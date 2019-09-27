@@ -35,6 +35,18 @@ header h1 {
   color: #F5F5F5;
 }
 
+@media screen and (min-width: 760px) {
+  header {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: left;
+        -ms-flex-pack: left;
+            justify-content: left;
+  }
+}
+
 nav {
   background: #171e3b;
   text-align: center;
@@ -58,6 +70,12 @@ nav .fas {
   position: absolute;
   -webkit-transform: translateX(calc(50vw - 70px));
           transform: translateX(calc(50vw - 70px));
+}
+
+@media screen and (min-width: 760px) {
+  nav .fas {
+    visibility: hidden;
+  }
 }
 
 main {
