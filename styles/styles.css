@@ -16,7 +16,7 @@ header {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background: #171e3b;
+  background: #002147;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -51,7 +51,7 @@ header h1 {
 }
 
 nav {
-  background: #171e3b;
+  background: #002147;
   text-align: center;
 }
 
@@ -70,7 +70,7 @@ nav a {
 }
 
 main {
-  background: #171e3b;
+  background: #002147;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -100,7 +100,7 @@ main a {
 }
 
 footer {
-  background: #171e3b;
+  background: #002147;
   color: #F5F5F5;
   font-size: 0.8em;
   padding: 10px;
@@ -138,7 +138,7 @@ footer p {
   position: absolute;
   -webkit-transform: translateX(calc(50vw - 70px));
           transform: translateX(calc(50vw - 70px));
-  background: #171e3b;
+  background: #002147;
   color: #F5F5F5;
   font-size: 2em;
   padding: 10px 20px;
