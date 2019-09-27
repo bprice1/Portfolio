@@ -1,8 +1,11 @@
 @import "variables";
 
-html {
+* {
   margin: 0;
   padding: 0;
+}
+
+html {
   font-size: 10px;
 }
 
@@ -45,13 +48,6 @@ nav {
     margin: 10px;
     text-decoration: none;
   }
-  .fas {
-    position: absolute;
-    transform: translateX(calc(50vw - 70px));
-    @media screen and (min-width: 760px) {
-      visibility: hidden;
-    }
-  }
 }
 
 main {
@@ -87,22 +83,31 @@ footer {
   }
 }
 
-.bigBold {
-  font-size: 15vw;
-  margin: $baseSpacing;
-  margin-top: 50px;
+.main-nav {
+  font-size: 0;
+  height: 0;
 }
 
 .fas {
+  position: absolute;
+  transform: translateX(calc(50vw - 70px));
   background: $primary;
   color: $white;
   font-size: 2em;
   padding: 10px 20px;
+  @media screen and (min-width: 760px) {
+    visibility: hidden;
+  }
 }
 
-.is-hidden--mobile {
-  font-size: 0;
-  height: 0;
+.active {
+  display: block;
+}
+
+.bigBold {
+  font-size: 15vw;
+  margin: $baseSpacing;
+  margin-top: 50px;
 }
 
 .btn {
@@ -116,3 +121,5 @@ footer {
   text-decoration: none;
   text-transform: uppercase;
 }
+
+

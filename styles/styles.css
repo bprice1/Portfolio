@@ -1,6 +1,9 @@
-html {
+* {
   margin: 0;
   padding: 0;
+}
+
+html {
   font-size: 10px;
 }
 
@@ -66,18 +69,6 @@ nav a {
   text-decoration: none;
 }
 
-nav .fas {
-  position: absolute;
-  -webkit-transform: translateX(calc(50vw - 70px));
-          transform: translateX(calc(50vw - 70px));
-}
-
-@media screen and (min-width: 760px) {
-  nav .fas {
-    visibility: hidden;
-  }
-}
-
 main {
   background: #171e3b;
   display: -webkit-box;
@@ -120,22 +111,35 @@ footer p {
   margin: 10px;
 }
 
-.bigBold {
-  font-size: 15vw;
-  margin: 10px;
-  margin-top: 50px;
+.main-nav {
+  font-size: 0;
+  height: 0;
 }
 
 .fas {
+  position: absolute;
+  -webkit-transform: translateX(calc(50vw - 70px));
+          transform: translateX(calc(50vw - 70px));
   background: #171e3b;
   color: #F5F5F5;
   font-size: 2em;
   padding: 10px 20px;
 }
 
-.is-hidden--mobile {
-  font-size: 0;
-  height: 0;
+@media screen and (min-width: 760px) {
+  .fas {
+    visibility: hidden;
+  }
+}
+
+.active {
+  display: block;
+}
+
+.bigBold {
+  font-size: 15vw;
+  margin: 10px;
+  margin-top: 50px;
 }
 
 .btn {
