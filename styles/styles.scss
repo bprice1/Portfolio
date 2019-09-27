@@ -84,8 +84,7 @@ footer {
 }
 
 .main-nav {
-  font-size: 0;
-  height: 0;
+  display: none;
 }
 
 .fas {
@@ -101,7 +100,7 @@ footer {
 }
 
 .active {
-  display: block;
+display: block;
 }
 
 .bigBold {

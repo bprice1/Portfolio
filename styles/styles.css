@@ -112,8 +112,7 @@ footer p {
 }
 
 .main-nav {
-  font-size: 0;
-  height: 0;
+  display: none;
 }
 
 .fas {
