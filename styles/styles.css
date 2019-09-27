@@ -115,6 +115,25 @@ footer p {
   display: none;
 }
 
+@media screen and (min-width: 760px) {
+  .main-nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .main-nav {
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    margin-right: 30px;
+  }
+}
+
 .fas {
   position: absolute;
   -webkit-transform: translateX(calc(50vw - 70px));
