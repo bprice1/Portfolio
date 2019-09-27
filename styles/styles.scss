@@ -23,7 +23,7 @@ header {
   flex-direction: column;
   justify-content: center;
   img {
-    height: 75px;
+    height: 50px;
     margin: $baseSpacing;
   }
   h1 {
@@ -53,18 +53,24 @@ nav {
 }
 
 main {
-  background: $primary;
+  align-items: center;
+  background: rgb(0,33,71);
+  background: radial-gradient(circle, rgba(0,33,71,1) 0%, rgba(0,167,157,1) 73%, rgba(0,33,71,1) 100%);
   display: flex;
   flex-direction: column;
-  min-height: 75vh;
+  justify-content: center;
+  min-height: 84vh;
   padding: $baseSpacing;
+  padding-bottom: $baseSpacing * 10;
   text-align: center;
-  h1,
   p {
     color: $white;
-    font-size: 1.5em;
+    font-size: 1.2em;
     margin: $baseSpacing;
+    margin-bottom: $baseSpacing *5;
     padding: $baseSpacing;
+    max-width: 1000px;
+
   }
   h2 {
     color: $white;
@@ -119,7 +125,8 @@ display: block;
 }
 
 .bigBold {
-  font-size: 15vw;
+  color: $white;
+  font-size: 6em;
   margin: $baseSpacing;
   margin-top: 50px;
 }
