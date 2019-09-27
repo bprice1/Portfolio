@@ -19,15 +19,15 @@ html {
   font-size: 10px;
 }
 
-* {
+{
   margin: 0;
   padding: 0;
-}
+} 
 
 body {
   font-family: 'Roboto', sans-serif;
   font-size: 1.5em;
-}
+} 
 
 header {
   align-items: center;

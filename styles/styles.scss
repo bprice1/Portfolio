@@ -1,0 +1,110 @@
+@import "variables";
+
+html {
+  margin: 0;
+  padding: 0;
+  font-size: 10px;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.5em;
+}
+
+header {
+  align-items: center;
+  background: $primary;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  img {
+    height: 75px;
+    margin: $baseSpacing;
+  }
+  h1 {
+    color: $white;
+  }
+}
+
+nav {
+  background: $primary;
+  text-align: center;
+  ul {
+    list-style-type: none;
+  }
+  li {
+    padding: $baseSpacing;
+  }
+  a {
+    color: $white;
+    margin: 10px;
+    text-decoration: none;
+  }
+  .fas {
+    position: absolute;
+    transform: translateX(calc(50vw - 70px));
+  }
+}
+
+main {
+  background: $primary;
+  display: flex;
+  flex-direction: column;
+  min-height: 75vh;
+  padding: $baseSpacing;
+  text-align: center;
+  h1,
+  p {
+    color: $white;
+    margin: $baseSpacing;
+  }
+  h2 {
+    color: $white;
+    margin: $baseSpacing;
+    padding: $baseSpacing;
+  }
+  a {
+    padding: $baseSpacing;
+  }
+}
+
+footer {
+  background: $primary;
+  color: $white;
+  font-size: 0.8em;
+  padding: $baseSpacing;
+  text-align: center;
+  p {
+    margin: $baseSpacing;
+  }
+}
+
+.bigBold {
+  font-size: 15vw;
+  margin: $baseSpacing;
+  margin-top: 50px;
+}
+
+.fas {
+  background: $primary;
+  color: $white;
+  font-size: 2em;
+  padding: 10px 20px;
+}
+
+.is-hidden--mobile {
+  font-size: 0;
+  height: 0;
+}
+
+.btn {
+  background-color: $logoBackground;
+  border-radius: 10%;
+  box-shadow: 3px 3px 3px $logoOrange;
+  color: $white;
+  display: inline-block;
+  margin: $baseSpacing * 2;
+  padding: 10px 15px;
+  text-decoration: none;
+  text-transform: uppercase;
+}

@@ -1,0 +1,135 @@
+html {
+  margin: 0;
+  padding: 0;
+  font-size: 10px;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.5em;
+}
+
+header {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #171e3b;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+header img {
+  height: 75px;
+  margin: 10px;
+}
+
+header h1 {
+  color: #F5F5F5;
+}
+
+nav {
+  background: #171e3b;
+  text-align: center;
+}
+
+nav ul {
+  list-style-type: none;
+}
+
+nav li {
+  padding: 10px;
+}
+
+nav a {
+  color: #F5F5F5;
+  margin: 10px;
+  text-decoration: none;
+}
+
+nav .fas {
+  position: absolute;
+  -webkit-transform: translateX(calc(50vw - 70px));
+          transform: translateX(calc(50vw - 70px));
+}
+
+main {
+  background: #171e3b;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  min-height: 75vh;
+  padding: 10px;
+  text-align: center;
+}
+
+main h1,
+main p {
+  color: #F5F5F5;
+  margin: 10px;
+}
+
+main h2 {
+  color: #F5F5F5;
+  margin: 10px;
+  padding: 10px;
+}
+
+main a {
+  padding: 10px;
+}
+
+footer {
+  background: #171e3b;
+  color: #F5F5F5;
+  font-size: 0.8em;
+  padding: 10px;
+  text-align: center;
+}
+
+footer p {
+  margin: 10px;
+}
+
+.bigBold {
+  font-size: 15vw;
+  margin: 10px;
+  margin-top: 50px;
+}
+
+.fas {
+  background: #171e3b;
+  color: #F5F5F5;
+  font-size: 2em;
+  padding: 10px 20px;
+}
+
+.is-hidden--mobile {
+  font-size: 0;
+  height: 0;
+}
+
+.btn {
+  background-color: #00A79D;
+  border-radius: 10%;
+  -webkit-box-shadow: 3px 3px 3px #F7941D;
+          box-shadow: 3px 3px 3px #F7941D;
+  color: #F5F5F5;
+  display: inline-block;
+  margin: 20px;
+  padding: 10px 15px;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+/*# sourceMappingURL=styles.css.map */
