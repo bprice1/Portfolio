@@ -20,6 +20,7 @@
     <title>Brian Price's Portfolio</title>
   </head>
   <body>
+    <div class="container">
     <header>
       <figure><img src="assets/LogoColor.png" alt="BP Design Logo" /></figure>
       <h1>Brian Price's Portfolio</h1>
@@ -30,15 +31,15 @@
         id="js-navbar-toggle"
       ></span>
       <ul class="main-nav" id="js-menu">
-        <li><a href="./index.html" class="nav-links">Home</a></li>
-        <li><a href="./" class="nav-links">About</a></li>
-        <li><a href="./" class="nav-links">UX/UI Projects</a></li>
-        <li><a href="./" class="nav-links">Web Design</a></li>
-        <li><a href="./" class="nav-links">Graphic Design</a></li>
-        <li><a href="./" class="nav-links">Contact</a></li>
+        <li><a href="/index.html" class="nav-links">Home</a></li>
+        <li><a href="/about.html" class="nav-links">About</a></li>
+        <li><a href="/" class="nav-links">UX/UI Projects</a></li>
+        <li><a href="/" class="nav-links">Web Design</a></li>
+        <li><a href="/" class="nav-links">Graphic Design</a></li>
+        <li><a href="/" class="nav-links">Contact</a></li>
       </ul>
     </nav>
-    <main>
+    <main id="swup" class="transition-fade">
       <h1 class="bigBold">Greetings!</h1>
       <section>
         <h2>Who Am I?</h2>
@@ -65,6 +66,11 @@
       </p>
       <!-- <p>Photo by Hal Gatewood on Unsplash</p> -->
     </footer>
-    <script src="scripts.js"></script>
+  </div>
+    <script src="/swup.min.js"></script>
+    <script>
+      const swup = new Swup();
+    </script>
+    <script src="/scripts.js"></script>
   </body>
 </html>

@@ -187,4 +187,18 @@ footer p {
   text-decoration: none;
   text-transform: uppercase;
 }
+
+.transition-fade {
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  opacity: 1;
+}
+
+html.is-animating .transition-fade {
+  opacity: 0;
+}
+
+.about-main {
+  background: #002147;
+}
 /*# sourceMappingURL=styles.css.map */
