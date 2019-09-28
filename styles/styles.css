@@ -32,6 +32,17 @@ header {
           justify-content: center;
 }
 
+@media screen and (min-width: 760px) {
+  header {
+    position: fixed;
+    /* Set the navbar to fixed position */
+    top: 0;
+    /* Position the navbar at the top of the page */
+    width: 100%;
+    /* Full width */
+  }
+}
+
 header img {
   height: 50px;
   margin: 10px;
@@ -58,6 +69,17 @@ nav {
   text-align: center;
 }
 
+@media screen and (min-width: 760px) {
+  nav {
+    position: fixed;
+    /* Set the navbar to fixed position */
+    top: 74px;
+    /* Position the navbar at the top of the page */
+    width: 100%;
+    /* Full width */
+  }
+}
+
 nav ul {
   list-style-type: none;
 }
@@ -72,7 +94,7 @@ nav a {
   text-decoration: none;
 }
 
-main {
+.index-main {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -94,7 +116,13 @@ main {
   text-align: center;
 }
 
-main p {
+@media screen and (min-width: 760px) {
+  .index-main {
+    margin-top: 110px;
+  }
+}
+
+.index-main p {
   color: #F5F5F5;
   font-size: 1.2em;
   margin: 10px;
@@ -103,13 +131,13 @@ main p {
   max-width: 1000px;
 }
 
-main h2 {
+.index-main h2 {
   color: #F5F5F5;
   margin: 10px;
   padding: 10px;
 }
 
-main a {
+.index-main a {
   padding: 10px;
 }
 
@@ -199,6 +227,47 @@ html.is-animating .transition-fade {
 }
 
 .about-main {
-  background: #002147;
+  background: #F5F5F5;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  min-height: 84vh;
+  padding: 10px;
+  padding-bottom: 100px;
+  text-align: center;
+}
+
+@media screen and (min-width: 760px) {
+  .about-main {
+    margin-top: 110px;
+  }
+}
+
+.about-main p {
+  font-size: 1.2em;
+  margin: 10px;
+  margin-bottom: 50px;
+  padding: 10px;
+  max-width: 1000px;
+}
+
+.about-main h2 {
+  color: #F5F5F5;
+  margin: 10px;
+  padding: 10px;
+}
+
+.about-main a {
+  padding: 10px;
 }
 /*# sourceMappingURL=styles.css.map */
