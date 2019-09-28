@@ -1,4 +1,5 @@
 * {
+  color: #080808;
   margin: 0;
   padding: 0;
 }
@@ -143,13 +144,13 @@ nav a {
 
 footer {
   background: #002147;
-  color: #F5F5F5;
   font-size: 0.8em;
   padding: 10px;
   text-align: center;
 }
 
 footer p {
+  color: #F5F5F5;
   margin: 10px;
 }
 
@@ -243,7 +244,6 @@ html.is-animating .transition-fade {
           justify-content: center;
   min-height: 84vh;
   padding: 10px;
-  padding-bottom: 100px;
   text-align: center;
 }
 
@@ -256,7 +256,6 @@ html.is-animating .transition-fade {
 .about-main p {
   font-size: 1.2em;
   margin: 10px;
-  margin-bottom: 50px;
   padding: 10px;
   max-width: 1000px;
 }
@@ -272,11 +271,58 @@ html.is-animating .transition-fade {
 }
 
 .about-main ul {
-  -webkit-column-count: 2;
-          column-count: 2;
+  -webkit-column-count: 3;
+          column-count: 3;
   -webkit-column-gap: 50px;
           column-gap: 50px;
+  list-style-type: none;
   margin: 10px;
   padding: 10px;
+}
+
+.grid {
+  display: -ms-grid;
+  display: grid;
+      grid-template-areas: "header header" "date1 text1" "date2 text2" "date3 text3";
+  -ms-grid-columns: 1fr 3fr;
+      grid-template-columns: 1fr 3fr;
+  -ms-grid-rows: auto;
+      grid-template-rows: auto;
+}
+
+.grid .grid-date1 {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: date1;
+}
+
+.grid .grid-date2 {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  grid-area: date2;
+}
+
+.grid .grid-date3 {
+  -ms-grid-row: 4;
+  -ms-grid-column: 1;
+  grid-area: date3;
+}
+
+.grid .grid-text1 {
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+  grid-area: text1;
+}
+
+.grid .grid-text2 {
+  -ms-grid-row: 4;
+  -ms-grid-column: 2;
+  grid-area: text3;
+}
+
+.grid .grid-text3 {
+  -ms-grid-row: 3;
+  -ms-grid-column: 2;
+  grid-area: text2;
 }
 /*# sourceMappingURL=styles.css.map */

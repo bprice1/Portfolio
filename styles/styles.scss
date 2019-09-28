@@ -1,6 +1,7 @@
 @import "variables";
 
 * {
+  color: $black;
   margin: 0;
   padding: 0;
 }
@@ -102,11 +103,11 @@ nav {
 
 footer {
   background: $primary;
-  color: $white;
   font-size: 0.8em;
   padding: $baseSpacing;
   text-align: center;
   p {
+    color: $white;
     margin: $baseSpacing;
   }
 }
@@ -177,7 +178,6 @@ html.is-animating .transition-fade {
   justify-content: center;
   min-height: 84vh;
   padding: $baseSpacing;
-  padding-bottom: $baseSpacing * 10;
   text-align: center;
   @media screen and (min-width: 760px) {
     margin-top: 110px;
@@ -185,7 +185,6 @@ html.is-animating .transition-fade {
   p {
     font-size: 1.2em;
     margin: $baseSpacing;
-    margin-bottom: $baseSpacing * 5;
     padding: $baseSpacing;
     max-width: 1000px;
   }
@@ -198,9 +197,44 @@ html.is-animating .transition-fade {
     padding: $baseSpacing;
   }
   ul {
-    column-count: 2;
+    column-count: 3;
     column-gap: $baseSpacing * 5;
+    list-style-type: none;
     margin: $baseSpacing;
     padding: $baseSpacing;
+  }
+}
+
+.grid {
+  display: grid;
+  grid-template-areas:
+    "header header"
+    "date1 text1"
+    "date2 text2"
+    "date3 text3";
+  grid-template-columns: 1fr 3fr;
+  grid-template-rows: auto;
+  .grid-date1 {
+    grid-area: date1;
+  }
+
+  .grid-date2 {
+    grid-area: date2;
+  }
+
+  .grid-date3 {
+    grid-area: date3;
+  }
+
+  .grid-text1 {
+    grid-area: text1;
+  }
+
+  .grid-text2 {
+    grid-area: text3;
+  }
+
+  .grid-text3 {
+    grid-area: text2;
   }
 }
