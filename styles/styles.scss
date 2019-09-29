@@ -216,7 +216,6 @@ html.is-animating .transition-fade {
 .prim-color {
   background: $primary;
   color: $white;
-  text-align: right;
   padding: $baseSpacing;
 }
 
@@ -305,7 +304,122 @@ html.is-animating .transition-fade {
     "blank header"
     "date1 content1"
     "date2 content2"
-    "date3 content3";
+    "date3 content3"
+    "date4 content4"
+    "date5 content5"
+    "date6 content6"
+    "date7 content7"
+    "date8 content8"
+    "date9 content9";
+    ;
+    grid-template-columns: 250px auto;
+    grid-template-rows: auto;
+    width: 100vw;
+    div {
+      grid-area: blank;
+    }
+    h4,
+    p {
+      padding: 5px 10px;
+      text-align: left;
+    }
+    h4 {
+      border-bottom: double $secondary;
+    }
+    .exp-title {
+      background: $white;
+      border-top: double $secondary;
+      border-bottom: double $secondary;
+      color: $primary;
+      grid-area: header;
+    }
+    .date-1 {
+      grid-area: date1;
+      margin: 0;
+    }
+    .date-2 {
+      grid-area: date2;
+      margin: 0;
+    }
+    .date-3 {
+      grid-area: date3;
+      margin: 0;
+    }
+    .date-4 {
+      grid-area: date4;
+      margin: 0;
+    }
+    .date-5 {
+      grid-area: date5;
+      margin: 0;
+    }
+    .date-6 {
+      grid-area: date6;
+      margin: 0;
+    }
+    .date-7 {
+      grid-area: date7;
+      margin: 0;
+    }
+    .date-8 {
+      grid-area: date8;
+      margin: 0;
+    }
+    .date-9 {
+      grid-area: date9;
+      margin: 0;
+    }
+    .content-1 {
+      grid-area: content1;
+      margin: 0;
+    }
+    .content-2 {
+      grid-area: content2;
+      margin: 0;
+    }
+    .content-3 {
+      grid-area: content3;
+      margin: 0;
+    }
+    .content-4 {
+      grid-area: content4;
+      margin: 0;
+    }
+    .content-5 {
+      grid-area: content5;
+      margin: 0;
+    }
+    .content-6 {
+      grid-area: content6;
+      margin: 0;
+    }
+    .content-7 {
+      grid-area: content7;
+      margin: 0;
+    }
+    .content-8 {
+      grid-area: content8;
+      margin: 0;
+    }
+    .content-9 {
+      grid-area: content9;
+      margin: 0;
+    }
+    p {
+      background: $white;
+      grid-area: content;
+      margin: 0;
+    }
+  }
+
+  .grid-edu {
+    display: grid;
+    grid-template-areas:
+      "blank header"
+      "date1 content1"
+      "date2 content2"
+      "date3 content3"
+      "date4 content4";
     grid-template-columns: 250px auto;
     grid-template-rows: auto;
     width: 100vw;
@@ -336,6 +450,10 @@ html.is-animating .transition-fade {
       grid-area: date3;
       margin: 0;
     }
+    .date-4 {
+      grid-area: date4;
+      margin: 0;
+    }
     .content-1 {
       grid-area: content1;
       margin: 0;
@@ -348,51 +466,8 @@ html.is-animating .transition-fade {
       grid-area: content3;
       margin: 0;
     }
-    p {
-      background: $white;
-      grid-area: content;
-      margin: 0;
-    }
-  }
-
-  .grid-edu {
-    display: grid;
-    grid-template-areas:
-      "blank header"
-      "date1 content1"
-      "date2 content2"
-      "date3 content3";
-    grid-template-columns: 250px auto;
-    grid-template-rows: auto;
-    width: 100vw;
-    div {
-      grid-area: blank;
-    }
-    h4,
-    p {
-      text-align: left;
-    }
-    .exp-title {
-      background: $white;
-      border-top: double $secondary;
-      border-bottom: double $secondary;
-      color: $primary;
-      grid-area: header;
-    }
-    .date-1 {
-      grid-area: date1;
-      margin: 0;
-    }
-    .date-2 {
-      grid-area: date2;
-      margin: 0;
-    }
-    .content-1 {
-      grid-area: content1;
-      margin: 0;
-    }
-    .content-2 {
-      grid-area: content2;
+    .content-4 {
+      grid-area: content4;
       margin: 0;
     }
     p {

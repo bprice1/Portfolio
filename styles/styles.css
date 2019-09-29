@@ -291,7 +291,6 @@ html.is-animating .transition-fade {
 .prim-color {
   background: #002147;
   color: #F5F5F5;
-  text-align: right;
   padding: 10px;
 }
 
@@ -396,7 +395,7 @@ html.is-animating .transition-fade {
   .grid-exp {
     display: -ms-grid;
     display: grid;
-        grid-template-areas: "blank header" "date1 content1" "date2 content2" "date3 content3";
+        grid-template-areas: "blank header" "date1 content1" "date2 content2" "date3 content3" "date4 content4" "date5 content5" "date6 content6" "date7 content7" "date8 content8" "date9 content9";
     -ms-grid-columns: 250px auto;
         grid-template-columns: 250px auto;
     -ms-grid-rows: auto;
@@ -412,6 +411,9 @@ html.is-animating .transition-fade {
   .grid-exp p {
     padding: 5px 10px;
     text-align: left;
+  }
+  .grid-exp h4 {
+    border-bottom: double #00A79d;
   }
   .grid-exp .exp-title {
     background: #F5F5F5;
@@ -440,6 +442,42 @@ html.is-animating .transition-fade {
     grid-area: date3;
     margin: 0;
   }
+  .grid-exp .date-4 {
+    -ms-grid-row: 5;
+    -ms-grid-column: 1;
+    grid-area: date4;
+    margin: 0;
+  }
+  .grid-exp .date-5 {
+    -ms-grid-row: 6;
+    -ms-grid-column: 1;
+    grid-area: date5;
+    margin: 0;
+  }
+  .grid-exp .date-6 {
+    -ms-grid-row: 7;
+    -ms-grid-column: 1;
+    grid-area: date6;
+    margin: 0;
+  }
+  .grid-exp .date-7 {
+    -ms-grid-row: 8;
+    -ms-grid-column: 1;
+    grid-area: date7;
+    margin: 0;
+  }
+  .grid-exp .date-8 {
+    -ms-grid-row: 9;
+    -ms-grid-column: 1;
+    grid-area: date8;
+    margin: 0;
+  }
+  .grid-exp .date-9 {
+    -ms-grid-row: 10;
+    -ms-grid-column: 1;
+    grid-area: date9;
+    margin: 0;
+  }
   .grid-exp .content-1 {
     -ms-grid-row: 2;
     -ms-grid-column: 2;
@@ -458,6 +496,42 @@ html.is-animating .transition-fade {
     grid-area: content3;
     margin: 0;
   }
+  .grid-exp .content-4 {
+    -ms-grid-row: 5;
+    -ms-grid-column: 2;
+    grid-area: content4;
+    margin: 0;
+  }
+  .grid-exp .content-5 {
+    -ms-grid-row: 6;
+    -ms-grid-column: 2;
+    grid-area: content5;
+    margin: 0;
+  }
+  .grid-exp .content-6 {
+    -ms-grid-row: 7;
+    -ms-grid-column: 2;
+    grid-area: content6;
+    margin: 0;
+  }
+  .grid-exp .content-7 {
+    -ms-grid-row: 8;
+    -ms-grid-column: 2;
+    grid-area: content7;
+    margin: 0;
+  }
+  .grid-exp .content-8 {
+    -ms-grid-row: 9;
+    -ms-grid-column: 2;
+    grid-area: content8;
+    margin: 0;
+  }
+  .grid-exp .content-9 {
+    -ms-grid-row: 10;
+    -ms-grid-column: 2;
+    grid-area: content9;
+    margin: 0;
+  }
   .grid-exp p {
     background: #F5F5F5;
     -ms-grid-row: 2;
@@ -468,7 +542,7 @@ html.is-animating .transition-fade {
   .grid-edu {
     display: -ms-grid;
     display: grid;
-        grid-template-areas: "blank header" "date1 content1" "date2 content2" "date3 content3";
+        grid-template-areas: "blank header" "date1 content1" "date2 content2" "date3 content3" "date4 content4";
     -ms-grid-columns: 250px auto;
         grid-template-columns: 250px auto;
     -ms-grid-rows: auto;
@@ -482,6 +556,7 @@ html.is-animating .transition-fade {
   }
   .grid-edu h4,
   .grid-edu p {
+    padding: 5px 10px;
     text-align: left;
   }
   .grid-edu .exp-title {
@@ -505,6 +580,18 @@ html.is-animating .transition-fade {
     grid-area: date2;
     margin: 0;
   }
+  .grid-edu .date-3 {
+    -ms-grid-row: 4;
+    -ms-grid-column: 1;
+    grid-area: date3;
+    margin: 0;
+  }
+  .grid-edu .date-4 {
+    -ms-grid-row: 5;
+    -ms-grid-column: 1;
+    grid-area: date4;
+    margin: 0;
+  }
   .grid-edu .content-1 {
     -ms-grid-row: 2;
     -ms-grid-column: 2;
@@ -515,6 +602,18 @@ html.is-animating .transition-fade {
     -ms-grid-row: 3;
     -ms-grid-column: 2;
     grid-area: content2;
+    margin: 0;
+  }
+  .grid-edu .content-3 {
+    -ms-grid-row: 4;
+    -ms-grid-column: 2;
+    grid-area: content3;
+    margin: 0;
+  }
+  .grid-edu .content-4 {
+    -ms-grid-row: 5;
+    -ms-grid-column: 2;
+    grid-area: content4;
     margin: 0;
   }
   .grid-edu p {
