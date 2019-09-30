@@ -406,6 +406,7 @@ html.is-animating .transition-fade {
     -ms-grid-row: 1;
     -ms-grid-column: 1;
     grid-area: blank;
+    max-width: 1000px;
   }
   .grid-exp h4,
   .grid-exp p {

@@ -317,6 +317,7 @@ html.is-animating .transition-fade {
     width: 100vw;
     div {
       grid-area: blank;
+      max-width: 1000px;
     }
     h4,
     p {
