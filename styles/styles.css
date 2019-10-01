@@ -309,28 +309,6 @@ body {
   border-color: #3ee9d1;
 }
 
-h3 {
-  font-weight: bold;
-  font-size: 14px;
-  line-height: 18px;
-}
-
-ul {
-  -webkit-columns: 2;
-          columns: 2;
-  font-size: 14px;
-  line-height: 18px;
-}
-
-.btn {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
 * {
   color: #080808;
   margin: 0;
