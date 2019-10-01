@@ -54,27 +54,6 @@ $head-height: $number-size + 50;
 $body-height: $card-height - $head-height;
 $marker-dist: $card-width + $outer-margin/2 - $marker-size/2;
 
-/* Placeholders */
-
-@include mq-lg {
-  %arrow {
-    position: absolute;
-    content: "";
-    width: 0;
-    height: 0;
-    border-top: 15px solid transparent;
-    border-bottom: 15px solid transparent;
-  }
-  %marker {
-    position: absolute;
-    content: "";
-    width: $marker-size;
-    height: $marker-size;
-    background-color: $timeline;
-    border-radius: $marker-size;
-    box-shadow: 0px 0px 2px 8px $background;
-  }
-}
 
 /* Some Cool Stuff */
 
@@ -128,18 +107,6 @@ body {
       height: $container-height;
       margin: 0 auto;
     }
-    &::after {
-      z-index: 1;
-      content: "";
-      position: absolute;
-      top: 0;
-      bottom: 0;
-      left: 50%;
-      border-left: $border;
-      @include mq-lg {
-        border-left: 1px solid $timeline;
-      }
-    }
   }
   .demo-card {
     position: relative;
@@ -162,29 +129,9 @@ body {
       margin-bottom: $outer-margin/2;
       &:nth-child(odd) {
         margin-right: $outer-margin/2;
-        .head::after {
-          @extend %arrow;
-          border-left-width: 15px;
-          border-left-style: solid;
-          left: 100%;
-        }
-        .head::before {
-          @extend %marker;
-          left: $marker-dist + 1;
-        }
       }
       &:nth-child(even) {
         margin-left: $outer-margin/2;
-        .head::after {
-          @extend %arrow;
-          border-right-width: 15px;
-          border-right-style: solid;
-          right: 100%;
-        }
-        .head::before {
-          @extend %marker;
-          right: $marker-dist - 1;
-        }
       }
       &:nth-child(2) {
         margin-top: $stagger;

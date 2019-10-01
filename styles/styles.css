@@ -2,28 +2,6 @@
 /* Card sizing */
 /* Colors */
 /* Calculations */
-/* Placeholders */
-@media (min-width: 1000px) {
-  #timeline .demo-card:nth-child(odd) .head::after, #timeline .demo-card:nth-child(even) .head::after {
-    position: absolute;
-    content: "";
-    width: 0;
-    height: 0;
-    border-top: 15px solid transparent;
-    border-bottom: 15px solid transparent;
-  }
-  #timeline .demo-card:nth-child(odd) .head::before, #timeline .demo-card:nth-child(even) .head::before {
-    position: absolute;
-    content: "";
-    width: 9px;
-    height: 9px;
-    background-color: #bdbdbd;
-    border-radius: 9px;
-    -webkit-box-shadow: 0px 0px 2px 8px #f7f7f7;
-            box-shadow: 0px 0px 2px 8px #f7f7f7;
-  }
-}
-
 /* Some Cool Stuff */
 .demo-card:nth-child(1) {
   -webkit-box-ordinal-group: 2;
@@ -113,22 +91,6 @@ body {
   }
 }
 
-#timeline .demo-card-wrapper::after {
-  z-index: 1;
-  content: "";
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 50%;
-  border-left: 1px solid rgba(191, 191, 191, 0.4);
-}
-
-@media (min-width: 1000px) {
-  #timeline .demo-card-wrapper::after {
-    border-left: 1px solid #bdbdbd;
-  }
-}
-
 #timeline .demo-card {
   position: relative;
   display: block;
@@ -162,24 +124,8 @@ body {
   #timeline .demo-card:nth-child(odd) {
     margin-right: 45px;
   }
-  #timeline .demo-card:nth-child(odd) .head::after {
-    border-left-width: 15px;
-    border-left-style: solid;
-    left: 100%;
-  }
-  #timeline .demo-card:nth-child(odd) .head::before {
-    left: 541.5px;
-  }
   #timeline .demo-card:nth-child(even) {
     margin-left: 45px;
-  }
-  #timeline .demo-card:nth-child(even) .head::after {
-    border-right-width: 15px;
-    border-right-style: solid;
-    right: 100%;
-  }
-  #timeline .demo-card:nth-child(even) .head::before {
-    right: 539.5px;
   }
   #timeline .demo-card:nth-child(2) {
     margin-top: 180px;
