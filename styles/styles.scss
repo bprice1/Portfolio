@@ -1,4 +1,5 @@
 @import "variables";
+@import "modules";
 
 * {
   color: $black;
@@ -25,8 +26,8 @@ header {
   flex-direction: column;
   justify-content: center;
   @media screen and (min-width: 760px) {
-    position: fixed; /* Set the navbar to fixed position */
-    top: 0; /* Position the navbar at the top of the page */
+    // position: fixed; /* Set the navbar to fixed position */
+    // top: 0; /* Position the navbar at the top of the page */
     width: 100%; /* Full width */
   }
   img {
@@ -47,8 +48,8 @@ nav {
   background: $primary;
   text-align: center;
   @media screen and (min-width: 760px) {
-    position: fixed; /* Set the navbar to fixed position */
-    top: 74px; /* Position the navbar at the top of the page */
+    // position: fixed; /* Set the navbar to fixed position */
+    // top: 74px; /* Position the navbar at the top of the page */
     width: 100%; /* Full width */
   }
   ul {
@@ -81,11 +82,11 @@ nav {
   padding-bottom: $baseSpacing * 10;
   text-align: center;
   @media screen and (min-width: 760px) {
-    margin-top: 110px;
+    // margin-top: 110px;
   }
   p {
     color: $white;
-    font-size: 1.2em;
+    // font-size: 1.2em;
     margin: $baseSpacing;
     margin-bottom: $baseSpacing * 5;
     padding: $baseSpacing;
@@ -129,7 +130,7 @@ footer {
 .fas {
   position: absolute;
   transform: translateX(calc(50vw - 70px));
-  background: $primary;
+  // background: $primary;
   color: $white;
   font-size: 2em;
   padding: 10px 20px;
@@ -180,7 +181,7 @@ html.is-animating .transition-fade {
   min-height: 84vh;
   text-align: center;
   @media screen and (min-width: 760px) {
-    margin-top: 110px;
+    // margin-top: 110px;
   }
   p {
     font-size: 1.2em;
