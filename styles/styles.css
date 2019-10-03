@@ -86,7 +86,7 @@ body {
         -ms-flex-flow: column wrap;
             flex-flow: column wrap;
     width: 1100px;
-    height: 2280px;
+    height: 2130px;
     margin: 0 auto;
   }
 }
@@ -116,7 +116,7 @@ body {
 @media (min-width: 1000px) {
   .timeline .demo-card {
     max-width: 400px;
-    height: 600px;
+    height: 550px;
     margin: 100px;
     margin-top: 50px;
     margin-bottom: 50px;
@@ -194,7 +194,7 @@ body {
 
 @media (min-width: 1000px) {
   .timeline .demo-card .body {
-    height: 515px;
+    height: 465px;
   }
 }
 
@@ -241,7 +241,7 @@ body {
 }
 
 .timeline .demo-card .body .btn-div .btn {
-  margin: 15px 30px;
+  margin: 15px 15px;
 }
 
 .timeline .demo-card--step1 {

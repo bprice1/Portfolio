@@ -34,7 +34,7 @@ $rows: ceil($items/2);
 
 /* Card sizing */
 
-$card-height: 600px;
+$card-height: 550px;
 $card-width: 400px;
 $inner-margin: 15px;
 $number-size: 35px;
@@ -217,7 +217,7 @@ body {
         font-size: 14px;
         justify-content: center;
         .btn {
-          margin: 15px 30px;
+          margin: 15px 15px;
         }
       }
     }
