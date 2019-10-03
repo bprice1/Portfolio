@@ -67,13 +67,15 @@ nav {
 
 .index-main {
   align-items: center;
-  background: rgb(0, 33, 71);
-  background: radial-gradient(
-    circle,
-    rgba(0, 33, 71, 1) 0%,
-    rgba(0, 167, 157, 1) 73%,
-    rgba(0, 33, 71, 1) 100%
-  );
+  background-image: url("/assets/background1.jpg");
+  background-size: cover;
+  // background: rgb(0, 33, 71, .25);
+  // background: radial-gradient(
+  //   circle,
+  //   rgba(0, 33, 71, 1) 0%,
+  //   rgba(0, 167, 157, 1) 73%,
+  //   rgba(0, 33, 71, 1) 100%
+  // );
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -83,6 +85,9 @@ nav {
   text-align: center;
   @media screen and (min-width: 760px) {
     // margin-top: 110px;
+  }
+  section {
+    background:  rgba(0, 33, 71, .5);
   }
   p {
     color: $white;

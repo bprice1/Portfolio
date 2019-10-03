@@ -385,8 +385,8 @@ nav a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background: #002147;
-  background: radial-gradient(circle, #002147 0%, #00a79d 73%, #002147 100%);
+  background-image: url("/assets/background1.jpg");
+  background-size: cover;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -401,6 +401,10 @@ nav a {
   padding: 10px;
   padding-bottom: 100px;
   text-align: center;
+}
+
+.index-main section {
+  background: rgba(0, 33, 71, 0.5);
 }
 
 .index-main p {
