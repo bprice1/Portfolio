@@ -174,43 +174,31 @@ html.is-animating .transition-fade {
 
 .about-main {
   background: $white;
-  align-items: center;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
   min-height: 84vh;
   text-align: center;
   @media screen and (min-width: 760px) {
-    // margin-top: 110px;
+    display: flex;
+  }
+  section {
+    display: flex;
+    flex-direction: column;
+    height: 84vh;
+    justify-content: center;
+    width: 50vw;
   }
   p {
     font-size: 1.2em;
     margin: $baseSpacing;
     padding: $baseSpacing;
-    max-width: 1000px;
+    height: 200px;
   }
   h2 {
     color: $black;
     margin: $baseSpacing;
     padding: $baseSpacing;
-    max-width: 1000px;
-  }
-  h3 {
-    padding: $baseSpacing;
-    max-width: 1000px;
-    // text-align: center;
   }
   a {
     padding: $baseSpacing;
-  }
-  ul {
-    column-count: 2;
-    column-gap: $baseSpacing * 5;
-    list-style-type: none;
-    margin: $baseSpacing;
-    padding: $baseSpacing;
-    max-width: 1000px;
-    width: 100vw;
   }
 }
 
@@ -218,6 +206,10 @@ html.is-animating .transition-fade {
   background: $primary;
   color: $white;
   padding: $baseSpacing;
+  h2,
+  p {
+    color: $white;
+  }
 }
 
 .align-right {
@@ -225,261 +217,4 @@ html.is-animating .transition-fade {
 }
 
 @media screen and (min-width: 760px) {
-  .grid-intro {
-    display: grid;
-    grid-template-areas:
-      "blank header"
-      "blank content"
-      "blank btn";
-    grid-template-columns: 250px auto;
-    grid-template-rows: auto;
-    width: 100vw;
-    div {
-      grid-area: blank;
-    }
-    h2 {
-      background: $white;
-      grid-area: header;
-      margin: 0;
-    }
-    p {
-      background: $white;
-      grid-area: content;
-      margin: 0;
-    }
-    .btn-container {
-      background: $white;
-      grid-area: btn;
-      margin: 0;
-      max-width: 1000px;
-    }
-  }
-
-  .grid-sum {
-    display: grid;
-    grid-template-areas:
-      ". header"
-      "side content";
-    grid-template-columns: 250px auto;
-    grid-template-rows: auto;
-    width: 100vw;
-    h2 {
-      border-top: double $secondary;
-      grid-area: header;
-      margin: 0;
-    }
-    h3 {
-      grid-area: side;
-      margin: 0;
-    }
-    p {
-      grid-area: content;
-      margin: 0;
-    }
-  }
-
-  .grid-skills {
-    display: grid;
-    grid-template-areas: "header list";
-    grid-template-columns: 250px auto;
-    grid-template-rows: auto;
-    width: 100vw;
-    ul {
-      border-top: double $secondary;
-      grid-area: list;
-      margin: 0;
-    }
-    li {
-      text-align: center;
-      width: 100px;
-    }
-    h3 {
-      grid-area: header;
-      margin: 0;
-    }
-  }
-
-  .grid-exp {
-    display: grid;
-    grid-template-areas:
-    "blank header"
-    "date1 content1"
-    "date2 content2"
-    "date3 content3"
-    "date4 content4"
-    "date5 content5"
-    "date6 content6"
-    "date7 content7"
-    "date8 content8"
-    "date9 content9";
-    ;
-    grid-template-columns: 250px auto;
-    grid-template-rows: auto;
-    width: 100vw;
-    div {
-      grid-area: blank;
-      max-width: 1000px;
-    }
-    h4,
-    p {
-      padding: 5px 10px;
-      text-align: left;
-    }
-    h4 {
-      border-bottom: double $secondary;
-    }
-    .exp-title {
-      background: $white;
-      border-top: double $secondary;
-      border-bottom: double $secondary;
-      color: $primary;
-      grid-area: header;
-    }
-    .date-1 {
-      grid-area: date1;
-      margin: 0;
-    }
-    .date-2 {
-      grid-area: date2;
-      margin: 0;
-    }
-    .date-3 {
-      grid-area: date3;
-      margin: 0;
-    }
-    .date-4 {
-      grid-area: date4;
-      margin: 0;
-    }
-    .date-5 {
-      grid-area: date5;
-      margin: 0;
-    }
-    .date-6 {
-      grid-area: date6;
-      margin: 0;
-    }
-    .date-7 {
-      grid-area: date7;
-      margin: 0;
-    }
-    .date-8 {
-      grid-area: date8;
-      margin: 0;
-    }
-    .date-9 {
-      grid-area: date9;
-      margin: 0;
-    }
-    .content-1 {
-      grid-area: content1;
-      margin: 0;
-    }
-    .content-2 {
-      grid-area: content2;
-      margin: 0;
-    }
-    .content-3 {
-      grid-area: content3;
-      margin: 0;
-    }
-    .content-4 {
-      grid-area: content4;
-      margin: 0;
-    }
-    .content-5 {
-      grid-area: content5;
-      margin: 0;
-    }
-    .content-6 {
-      grid-area: content6;
-      margin: 0;
-    }
-    .content-7 {
-      grid-area: content7;
-      margin: 0;
-    }
-    .content-8 {
-      grid-area: content8;
-      margin: 0;
-    }
-    .content-9 {
-      grid-area: content9;
-      margin: 0;
-    }
-    p {
-      background: $white;
-      grid-area: content;
-      margin: 0;
-    }
-  }
-
-  .grid-edu {
-    display: grid;
-    grid-template-areas:
-      "blank header"
-      "date1 content1"
-      "date2 content2"
-      "date3 content3"
-      "date4 content4";
-    grid-template-columns: 250px auto;
-    grid-template-rows: auto;
-    width: 100vw;
-    div {
-      grid-area: blank;
-    }
-    h4,
-    p {
-      padding: 5px 10px;
-      text-align: left;
-    }
-    .exp-title {
-      background: $white;
-      border-top: double $secondary;
-      border-bottom: double $secondary;
-      color: $primary;
-      grid-area: header;
-    }
-    .date-1 {
-      grid-area: date1;
-      margin: 0;
-    }
-    .date-2 {
-      grid-area: date2;
-      margin: 0;
-    }
-    .date-3 {
-      grid-area: date3;
-      margin: 0;
-    }
-    .date-4 {
-      grid-area: date4;
-      margin: 0;
-    }
-    .content-1 {
-      grid-area: content1;
-      margin: 0;
-    }
-    .content-2 {
-      grid-area: content2;
-      margin: 0;
-    }
-    .content-3 {
-      grid-area: content3;
-      margin: 0;
-    }
-    .content-4 {
-      grid-area: content4;
-      margin: 0;
-    }
-    p {
-      background: $white;
-      grid-area: content;
-      margin: 0;
-    }
-  }
 }
-
-
-
-
