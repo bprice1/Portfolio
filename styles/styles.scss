@@ -177,17 +177,14 @@ html.is-animating .transition-fade {
   background: $white;
   min-height: 84vh;
   text-align: center;
-
-  @media screen and (min-width: 760px) {
+  section {
     display: flex;
-    section {
-      display: flex;
-      flex-direction: column;
-      height: 84vh;
-      justify-content: center;
-      width: 50vw;
-    }
+    flex-direction: column;
+    height: 42vh;
+    justify-content: center;
+
   }
+
   p {
     font-size: 1.2em;
     margin: $baseSpacing;
@@ -200,6 +197,17 @@ html.is-animating .transition-fade {
   }
   a {
     padding: $baseSpacing;
+  }
+
+  @media screen and (min-width: 760px) {
+    display: flex;
+    section {
+      display: flex;
+      flex-direction: column;
+      height: 84vh;
+      justify-content: center;
+      width: 50vw;
+    }
   }
 }
 
