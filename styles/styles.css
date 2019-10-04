@@ -476,8 +476,8 @@ footer p {
 
 .fas {
   position: absolute;
-  -webkit-transform: translateX(calc(50vw - 70px));
-          transform: translateX(calc(50vw - 70px));
+  -webkit-transform: translate(calc(50vw - 70px), -50px);
+          transform: translate(calc(50vw - 70px), -50px);
   color: #F5F5F5;
   font-size: 2em;
   padding: 10px 20px;

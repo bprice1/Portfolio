@@ -130,7 +130,7 @@ footer {
 
 .fas {
   position: absolute;
-  transform: translateX(calc(50vw - 70px));
+  transform: translate(calc(50vw - 70px), -50px);
   // background: $primary;
   color: $white;
   font-size: 2em;
