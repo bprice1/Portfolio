@@ -50,34 +50,34 @@ body {
   font-family: Roboto;
 }
 
-.timeline {
+.projects {
   padding: 100px 0;
   background: #F5F5F5;
   border-top: 1px solid rgba(191, 191, 191, 0.4);
   border-bottom: 1px solid rgba(191, 191, 191, 0.4);
 }
 
-.timeline h1 {
+.projects h1 {
   text-align: center;
   font-size: 3rem;
   font-weight: 200;
   margin-bottom: 20px;
 }
 
-.timeline p.leader {
+.projects p.leader {
   text-align: center;
   max-width: 90%;
   margin: auto;
   margin-bottom: 45px;
 }
 
-.timeline .demo-card-wrapper {
+.projects .demo-card-wrapper {
   position: relative;
   margin: auto;
 }
 
 @media (min-width: 1000px) {
-  .timeline .demo-card-wrapper {
+  .projects .demo-card-wrapper {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -91,7 +91,7 @@ body {
   }
 }
 
-.timeline .demo-card {
+.projects .demo-card {
   position: relative;
   display: block;
   margin: 10px auto 80px;
@@ -100,7 +100,7 @@ body {
 }
 
 @media (min-width: 480px) {
-  .timeline .demo-card {
+  .projects .demo-card {
     max-width: 60%;
     -webkit-box-shadow: 0px 1px 22px 4px rgba(0, 0, 0, 0.07);
             box-shadow: 0px 1px 22px 4px rgba(0, 0, 0, 0.07);
@@ -108,31 +108,31 @@ body {
 }
 
 @media (min-width: 770px) {
-  .timeline .demo-card {
+  .projects .demo-card {
     max-width: 40%;
   }
 }
 
 @media (min-width: 1000px) {
-  .timeline .demo-card {
+  .projects .demo-card {
     max-width: 400px;
     height: 550px;
     margin: 100px;
     margin-top: 50px;
     margin-bottom: 50px;
   }
-  .timeline .demo-card:nth-child(odd) {
+  .projects .demo-card:nth-child(odd) {
     margin-right: 50px;
   }
-  .timeline .demo-card:nth-child(even) {
+  .projects .demo-card:nth-child(even) {
     margin-left: 50px;
   }
-  .timeline .demo-card:nth-child(2) {
+  .projects .demo-card:nth-child(2) {
     margin-top: 180px;
   }
 }
 
-.timeline .demo-card .head {
+.projects .demo-card .head {
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -143,7 +143,7 @@ body {
   font-weight: 400;
 }
 
-.timeline .demo-card .head .number-box {
+.projects .demo-card .head .number-box {
   display: inline;
   margin: 15px;
   padding: 10px;
@@ -153,7 +153,7 @@ body {
   background: rgba(0, 0, 0, 0.17);
 }
 
-.timeline .demo-card .head h2 {
+.projects .demo-card .head h2 {
   color: #fff;
   text-transform: uppercase;
   font-size: 1.3rem;
@@ -165,13 +165,13 @@ body {
 }
 
 @media (min-width: 480px) {
-  .timeline .demo-card .head h2 {
+  .projects .demo-card .head h2 {
     font-size: 165%;
     line-height: 1.2rem;
   }
 }
 
-.timeline .demo-card .head h2 span {
+.projects .demo-card .head h2 span {
   color: #fff;
   display: block;
   font-size: 0.6rem;
@@ -180,12 +180,12 @@ body {
 }
 
 @media (min-width: 480px) {
-  .timeline .demo-card .head h2 span {
+  .projects .demo-card .head h2 span {
     font-size: 0.9rem;
   }
 }
 
-.timeline .demo-card .body {
+.projects .demo-card .body {
   background: #fff;
   border: 1px solid rgba(191, 191, 191, 0.4);
   border-top: 0;
@@ -193,42 +193,42 @@ body {
 }
 
 @media (min-width: 1000px) {
-  .timeline .demo-card .body {
+  .projects .demo-card .body {
     height: 465px;
   }
 }
 
-.timeline .demo-card .body p {
+.projects .demo-card .body p {
   font-size: 14px;
   line-height: 18px;
   margin-bottom: 15px;
 }
 
-.timeline .demo-card .body h3 {
+.projects .demo-card .body h3 {
   font-size: 14px;
   text-align: center;
   text-transform: uppercase;
 }
 
-.timeline .demo-card .body ul {
+.projects .demo-card .body ul {
   -webkit-columns: 2;
           columns: 2;
   margin: 0 15px;
   list-style-type: none;
 }
 
-.timeline .demo-card .body ul li {
+.projects .demo-card .body ul li {
   font-size: 14px;
   font-style: italic;
   text-align: center;
 }
 
-.timeline .demo-card .body img {
+.projects .demo-card .body img {
   display: block;
   width: 100%;
 }
 
-.timeline .demo-card .body .btn-div {
+.projects .demo-card .body .btn-div {
   -ms-flex-line-pack: center;
       align-content: center;
   display: -webkit-box;
@@ -240,55 +240,55 @@ body {
           justify-content: center;
 }
 
-.timeline .demo-card .body .btn-div .btn {
+.projects .demo-card .body .btn-div .btn {
   margin: 15px 15px;
 }
 
-.timeline .demo-card--step1 {
+.projects .demo-card--step1 {
   background-color: #374785;
 }
 
-.timeline .demo-card--step1 .head::after {
+.projects .demo-card--step1 .head::after {
   border-color: #374785;
 }
 
-.timeline .demo-card--step2 {
+.projects .demo-card--step2 {
   background-color: #00A79d;
 }
 
-.timeline .demo-card--step2 .head::after {
+.projects .demo-card--step2 .head::after {
   border-color: #00A79d;
 }
 
-.timeline .demo-card--step3 {
+.projects .demo-card--step3 {
   background-color: #F7941D;
 }
 
-.timeline .demo-card--step3 .head::after {
+.projects .demo-card--step3 .head::after {
   border-color: #F7941D;
 }
 
-.timeline .demo-card--step4 {
+.projects .demo-card--step4 {
   background-color: #002147;
 }
 
-.timeline .demo-card--step4 .head::after {
+.projects .demo-card--step4 .head::after {
   border-color: #002147;
 }
 
-.timeline .demo-card--step5 {
+.projects .demo-card--step5 {
   background-color: #374785;
 }
 
-.timeline .demo-card--step5 .head::after {
+.projects .demo-card--step5 .head::after {
   border-color: #374785;
 }
 
-.timeline .demo-card--step6 {
+.projects .demo-card--step6 {
   background-color: #00A79d;
 }
 
-.timeline .demo-card--step6 .head::after {
+.projects .demo-card--step6 .head::after {
   border-color: #00A79d;
 }
 
