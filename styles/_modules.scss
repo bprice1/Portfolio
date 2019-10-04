@@ -44,9 +44,8 @@ $marker-size: 9px;
 
 /* Colors */
 
-$steps: #46b8e9;
-$colors: #46b8e9, #3ee9d1, #ce43eb, #4d92eb;
-// $timeline: #bdbdbd;
+$steps: #374785;
+$colors: #374785, #00A79d, #F7941D, #002147;
 
 /* Calculations */
 
@@ -143,7 +142,6 @@ body {
       position: relative;
       display: flex;
       align-items: center;
-      // color: $white;
       font-weight: 400;
       .number-box {
         display: inline;

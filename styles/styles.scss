@@ -149,6 +149,7 @@ footer {
   font-size: 4em;
   margin: $baseSpacing;
   margin-top: 50px;
+  text-shadow: 5px 5px $black;
 }
 
 .btn {
@@ -175,7 +176,6 @@ html.is-animating .transition-fade {
 
 .about-main {
   background: $white;
-  min-height: 84vh;
   text-align: center;
   section {
     display: flex;
@@ -184,7 +184,6 @@ html.is-animating .transition-fade {
     justify-content: center;
 
   }
-
   p {
     font-size: 1.2em;
     margin: $baseSpacing;
@@ -202,13 +201,14 @@ html.is-animating .transition-fade {
   @media screen and (min-width: 760px) {
     display: flex;
     section {
-      display: flex;
-      flex-direction: column;
       height: 84vh;
-      justify-content: center;
       width: 50vw;
     }
   }
+}
+
+.text-white {
+  color:#fff;
 }
 
 .prim-color {
